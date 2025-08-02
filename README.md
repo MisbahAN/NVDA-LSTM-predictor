@@ -1,6 +1,6 @@
 # 🧠 NVDA LSTM Predictor
 
-A deep learning model that predicts **whether NVIDIA's stock (NVDA) will go UP or DOWN next week** based on historical data and technical indicators — using an LSTM (Long Short-Term Memory) neural network trained on normalized weekly price patterns.
+A deep learning model that predicts **whether NVIDIA's stock (NVDA) will go UP or DOWN next week** based on historical data and technical indicators - using an LSTM (Long Short-Term Memory) neural network trained on normalized weekly price patterns.
 
 ---
 
@@ -46,10 +46,10 @@ Because the stock market is noisy and volatile daily, we shift our perspective t
 | Indicator       | Purpose                                                                   |
 | --------------- | ------------------------------------------------------------------------- |
 | **MACD**        | Measures momentum. Positive MACD = uptrend; crossovers give trade signals |
-| **MACD Signal** | 9-period EMA of MACD — smoother signal line                               |
+| **MACD Signal** | 9-period EMA of MACD - smoother signal line                               |
 | **RSI**         | Detects overbought (>70) and oversold (<30) conditions                    |
 | **SMA5/20/50**  | Simple Moving Averages that indicate short- and long-term price trends    |
-| **Close Price** | The final price for the week — our main reference                         |
+| **Close Price** | The final price for the week - our main reference                         |
 
 All indicators are calculated using the [`ta`](https://github.com/bukosabino/ta) library.
 
@@ -71,7 +71,7 @@ We used a custom `adjust_for_stock_split()` function to scale historical prices 
 
 ## 🤖 Why LSTM?
 
-**LSTMs (Long Short-Term Memory networks)** are specialized RNNs designed for **sequence prediction**. They remember patterns across time — perfect for stock price time series.
+**LSTMs (Long Short-Term Memory networks)** are specialized RNNs designed for **sequence prediction**. They remember patterns across time - perfect for stock price time series.
 
 ### How we used it:
 
